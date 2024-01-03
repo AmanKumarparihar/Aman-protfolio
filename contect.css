@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wghte600&family=Lato&family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-container-contect h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 20px;
+    animation: slideDown 1s ease forwards;
+    animation-delay:  0.5s;
+    opacity: 0;
+}
+
+@keyframes slideDown {  
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* write css for form section */
+
+/* Style for the hero container */
+.hero-container-contect {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff; /* Change the border color on focus */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
+

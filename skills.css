@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wghte600&family=Lato&family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.hero-container-skills {
+    background-color: #9bdee9;
+    color: #0b0b0b;
+    padding: 30px 0;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    border-radius: 5%;
+}
+  
+  /*========== Style For Skills Bar Progress ==========*/
+
+.bar-content {
+    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.bar-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.bar-title,
+.bar-percentage {
+    color: var(--color1);
+}
+
+.bar-progress {
+    display: flex;
+    background-color: #e9eeef;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    width: 0;
+    display: flex;
+    position: relative;
+    transition-delay: 1s;
+    background-color: #764be4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.resume-tab.active .progress-bar {
+    animation: progress 1500ms ease-in 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+  

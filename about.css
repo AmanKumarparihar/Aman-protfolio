@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wghte600&family=Lato&family=Poppins&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-container-about h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 20px;
+    animation: slideDown 1s ease forwards;
+    animation-delay:  0.5s;
+    opacity: 0;
+}
+
+.hero-container-about p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* ==== animations ====== */
+
+@keyframes slideDown {  
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

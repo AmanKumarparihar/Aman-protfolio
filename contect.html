@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contect.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="index.html" class="active" style="--i:1">Home</a>
+            <a href="about.html" style="--i:2">About</a>
+            <a href="skills.html" style="--i:3">Skills</a>
+            <a href="projects.html" style="--i:4">Projects</a>
+            <a href="contect.html" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero-container-contect">
+        <!-- create a form with Name, Email, message(text box) -->
+        <form action="contect.php" method="post">
+            <h1>Contect Me.</h1>
+           <span>Full Name </span><input type="text" name="name" id="name" placeholder="Enter your name">
+            <span>Email</span> <input type="email" name="email" id="email" placeholder="Enter your email">
+            <span>Message</span> <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <button type="submit">Send</button>
+    </div>
+
+</body>
+</html>
